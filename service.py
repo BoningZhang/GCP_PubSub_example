@@ -1,6 +1,4 @@
 import logging
-import json
-import os
 
 from internal.subscriber import listen
 
@@ -11,7 +9,6 @@ def record_job_status(message, status, err_msg, return_vals):
 
     # may also consider recording the job status in your mysql database
     update_job_status(message, status)  # not implement
-
 
 
 @listen

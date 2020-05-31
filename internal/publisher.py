@@ -27,7 +27,7 @@ def publish_batch_messages(message_data_arr):
     # message_data should be in string
     logging.info("Publishing message...")
 
-    # Configure bach settings
+    # Configure batch settings
     batch_settings = pubsub_v1.types.BatchSettings(
         max_bytes=10240, max_latency=60  # Ten kilobyte  # One minutes
     )
